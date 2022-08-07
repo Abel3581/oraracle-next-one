@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Challenge 1</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="header_img">
+                <img src="imagenes/logo.svg" alt="Logo de Alura">
+            </div>
+        </div>
+    </header>    
+        
+     <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="text_in">
+                        <textarea id="texto" name="text_in_area"  placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <img src="imagenes/exclamacion.svg" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="imagenes/muneco.svg" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+     </main>
+    
+    
+    
+</body>
+</html>
