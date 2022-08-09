@@ -1,4 +1,5 @@
 
+
 html{
     height: 100%;
 }
@@ -11,9 +12,10 @@ body{
     letter-spacing: 0em;
 }
 
+
 .header_img{
     position: absolute;
-    /* margin: 40px 0 0 84px; */
+   
 }
 
 .header_img > img{
@@ -239,4 +241,98 @@ main{
 
 .invisible{
     display: none;
+}
+
+
+/******** Responsive ********/
+
+@media screen and (max-width: 900px) {
+
+    .encriptador{
+        height: 250vh;
+        flex-direction: column;
+        width: calc(100% - 80px);
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .encriptador_form {
+        margin: 0;
+        width: calc(100% - 80px);
+        flex-basis: 50%;
+        
+    }
+
+    .text_in > textarea {
+        height: 700px;
+    }
+
+    .text_in_info{
+        margin-bottom: 0;
+    }
+
+    .text_out_sec {
+        margin: 40px 40px;
+        width: calc(100% - 80px);
+        flex-basis: 50%;
+    }
+
+    .text_out_img > img{
+        display: none;
+    }
+
+    .content > p:nth-child(2){
+        margin-top: 0;
+    }
+    
+    .content > p:nth-child(3){
+        margin-top: 16px;
+    }
+
+    @media screen and (max-height: 600px) {
+        .text_out_img > img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+    
+    @media screen and (max-height: 500px) {
+        .text_out_img > img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .encriptador{
+            margin: 0 16px;
+            width: calc(100% - 32px);
+        }
+    
+        .text_out_sec {
+            width: calc(100% - 32px);
+        }
+    
+        .text_in_btns{
+            flex-direction: column;
+        }
+    
+        .text_in_btns > input {
+            flex-basis: 50%;
+            padding: 23px 0
+        }
+    
+        .text_in_btns > input:first-child {
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+        
+        .text_in_btns > input:last-child {
+            margin-top: 12px;
+            margin-left: 0;
+        }
+    
+        
+    
+    }
 }

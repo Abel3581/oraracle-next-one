@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    
     <title>Challenge 1</title>
 </head>
 <body>
     <header>
         <div class="contenedor">
-            <div class="header_img">
+            <div class="header_img" data-aos="fade-right">
                 <img src="imagenes/logo.svg" alt="Logo de Alura">
             </div>
         </div>
@@ -21,12 +26,12 @@
         <div class="contenedor">
             <div class="encriptador">
                 <form class="encriptador_form">
-                    <div class="text_in">
+                    <div class="text_in" data-aos="zoom-in-down">
                         <textarea id="texto" name="text_in_area"  placeholder="Ingrese el texto aqui" required></textarea>
                         <div class="text_in_info">
                             <div class="info">
                                 <img src="imagenes/exclamacion.svg" alt="">
-                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                                <p id="advertencia">Solo letras minúsculas y sin acentos</p>
                             </div>
                             <div class="text_in_btns">
                                 <input id="enc" type="button" value="Encriptar">
@@ -36,7 +41,7 @@
                     </div>
                 </form>
 
-                <div class="text_out_sec">
+                <div class="text_out_sec" data-aos="zoom-in-left" >
                     <div class="out_content">
                         <div class="content" id="default">
                             <div class="text_out_img">
@@ -45,7 +50,7 @@
                             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                         </div>
                         <div class = "content invisible" id="result">
-                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <textarea id="texto_out" name="text_out_area"></textarea>
                             <button id="copiar">Copiar</button>
                         </div>
                     </div>  
@@ -54,7 +59,14 @@
         </div>
      </main>
     
-    
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+           // once: true,
+        });
+      </script>
+    <script src="javaScript/js.js"></script>
 </body>
+
 </html>
